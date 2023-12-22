@@ -11,6 +11,39 @@ Ce projet est un site web test pour la formation DeWeb du CNAM.
 - NodeJS et npm TODO
 ## Installation 
 
+### version dev 
+
+il faut d'abord cloner l'application en local :
+
+``` 
+git clone https://github.com/bea59/laravel-10.git
+```
+
+Ensuite il faut créer une BDD puis configurer les accés dan le fichier `.env`
+
+```
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=mon_application
+DB_USERNAME=mon_application
+DB_PASSWORD=123
+```
+
+Pour créer les tables et injecter des données de test, vous pouvez utiliser un script bash :
+
+```
+./mkdb.sh
+```
+
+Vous pouvez donner un nom à l'application dans le fichier `.env`:
+
+```
+APP_NAME = "Mon Application"
+```
+
+### version prod 
+
 TODO
 
 ## Utilisation 
@@ -22,6 +55,23 @@ php artisan serve
 ```
 
 Aller sur la page [http://127.0.0.1:8000](http://127.0.0.1:8000)
+
+## Requêtes SQL utiles
+
+```
+-- Liste des catégories et de leurs plats
+SELECT * 
+FROM categories 
+INNER JOIN plats ON categories.id = plats.categories_id
+ORDER BY categories.id, plats.nom
+```
+```
+SELECT * 
+FROM plats 
+INNER JOIN etiquettes_plats ON etiquettes_plats.plats_id = plats.id 
+INNER JOIN etiquettes ON etiquettes_plats.etiquettes_id = etiquettes.id 
+ORDER BY plats.nom, etiquettes.nom
+```
 
 ## Recommandations 
 
