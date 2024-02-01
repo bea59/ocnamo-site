@@ -7,15 +7,20 @@
         <h2 class="title">Menu</h2>
         @foreach ($categories as $categorie)
         <div>
-            <h3>{{ $categorie }}</h3>
+            <h3>{{ $categorie->nom }}</h3>
             <ul class="plats">
-                @for ($i = 0; $i < 5 ; $i++)
+                @foreach($categorie->plat() as $plat)
                 <li>
-                    <img src="/images/burger.jpg" alt="burger fire">
-                    <h4>Lorem ipsum dolor</h4>
-                    <span class="prix">9,99$</span>
+                    <a href="{{ route('main.plat', ['id' => $plat->id])}}"><img src="{{ asset('images/'.$plat->fichier)}}" alt="{{ $plat->nom}}"></a>
+                    <a href="{{ route('main.plat', ['id' => $plat->id])}}"><h4>{{ $plat->nom }}</h4></a>
+                    <span class="prix">{{ $plat->prix }} euros</span>
+                    <ul>
+                        @foreach ($plat -> etiquettes() as $etiquette)
+                        <li>{{$etiquette -> nom}}</li>
+                        @endforeach
+                    </ul>
                 </li>
-                @endfor
+                @endforeach
             </ul>
         </div>
         @endforeach
