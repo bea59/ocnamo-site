@@ -1,0 +1,26 @@
+Avancement du projet de cours 
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch main
+# Your branch is up to date with 'origin/main'.
+#
+# Changes to be committed:
+#	modified:   app/Http/Controllers/MainController.php
+#	new file:   app/Models/Actu.php
+#	new file:   app/Models/Categorie.php
+#	new file:   app/Models/Etiquette.php
+#	new file:   app/Models/Parametre.php
+#	new file:   app/Models/PhotoAmbiance.php
+#	new file:   app/Models/Plat.php
+#	new file:   app/Models/Reservation.php
+#	renamed:    public/images/burger.jpg -> public/images/plats.jpg
+#	modified:   resources/css/app.css
+#	modified:   resources/views/base.blade.php
+#	modified:   resources/views/home.blade.php
+#	modified:   resources/views/menu.blade.php
+#	new file:   resources/views/plat.blade.php
+#	new file:   resources/views/reservation.blade.php
+#	modified:   routes/web.php
+#

@@ -1,6 +1,6 @@
 # Projet de restauration 0 Cnamo 
 
-Ce projet est un site web test pour la formation DeWeb du CNAM.
+Ce projet est un site web test pour la formation DevWeb du CNAM.
 
 ## Prérequis 
 
