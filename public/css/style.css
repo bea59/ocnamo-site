@@ -10,6 +10,11 @@
 * 	Template Style 
 *
 * ======================================================= */
+
+.color {
+  color: white;
+}
+
 body {
   font-family: "Cormorant Garamond", Georgia, serif;
   font-weight: 400;
@@ -369,7 +374,7 @@ h1, h2, h3, h4, h5, h6, figure {
 #fh5co-header .display-tc .form-inline .form-group .form-control,
 .fh5co-cover .display-tc .form-inline .form-group .form-control {
   width: 100%;
-  background: #fff;
+  background:#fff;
   border: none;
 }
 
@@ -411,7 +416,7 @@ h1, h2, h3, h4, h5, h6, figure {
 #fh5co-featured-menu .fh5co-item, #fh5co-gallery .fh5co-item, #fh5co-reservation-form .fh5co-item {
   float: left;
   width: 100%;
-  background: #fff;
+  background:#ec3e44
 }
 #fh5co-featured-menu .fh5co-item.margin_top, #fh5co-gallery .fh5co-item.margin_top, #fh5co-reservation-form .fh5co-item.margin_top {
   margin-top: 150px;
@@ -422,10 +427,10 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 #fh5co-featured-menu .fh5co-item .fh5co-price, #fh5co-gallery .fh5co-item .fh5co-price, #fh5co-reservation-form .fh5co-item .fh5co-price {
   font-style: 20px;
-  color: #fee856;
+  color:darkorange;
   margin-bottom: 20px;
   font-size: 30px;
-  display: block;
+  display:block;
 }
 #fh5co-featured-menu .fh5co-item img, #fh5co-gallery .fh5co-item img, #fh5co-reservation-form .fh5co-item img {
   margin-bottom: 30px;
@@ -1442,7 +1447,7 @@ h1, h2, h3, h4, h5, h6, figure {
 
 .form-control {
   box-shadow: none;
-  background: transparent;
+  background:transparent;
   border: 2px solid rgba(255, 255, 255, 0.3);
   height: 54px;
   font-size: 20px;
@@ -1450,6 +1455,15 @@ h1, h2, h3, h4, h5, h6, figure {
   font-family: "Satisfy", cursive;
   color: #fff;
 }
+
+.en-dessous {
+  margin-top: 150px;
+}
+
+.select {
+  background: #252525;
+}
+
 .form-control:active, .form-control:focus {
   outline: none;
   box-shadow: none;
@@ -1459,6 +1473,8 @@ h1, h2, h3, h4, h5, h6, figure {
 textarea {
   resize: vertical;
   overflow: auto;
+  color: white;
+  background:transparent;
 }
 
 .row-pb-md {

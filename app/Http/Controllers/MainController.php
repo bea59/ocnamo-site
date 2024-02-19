@@ -24,10 +24,10 @@ class MainController extends Controller
             "21:30:00" => '21:30',
         ];
 
-    public function home()
+    public function accueil()
     {
         $actus = Actu::all();
-        return view('home',[
+        return view('accueil',[
             'actus' => $actus,
         ]);
     }
@@ -36,7 +36,7 @@ class MainController extends Controller
     {
         $categories = Categorie::all();
 
-    return view('menu',[
+        return view('menu',[
         //variables qui peuvent étre utilisés dans le template
         'categories' => $categories]);
     }
@@ -49,7 +49,7 @@ class MainController extends Controller
     ]); 
     }
 
-    public function reservation ()
+    public function reservation()
     { 
         return view('reservation', [
             'heures' => $this->heures,
@@ -83,5 +83,15 @@ class MainController extends Controller
 
         return view('reservationStore', ['reservation' => $reservation,
         ]);
-    }   
+    }
+    
+    public function about()
+    {
+        return view('about');
+    }
+
+    public function contact()
+    {
+        return view('contact');
+    }
 }

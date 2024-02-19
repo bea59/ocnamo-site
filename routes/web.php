@@ -20,7 +20,7 @@ use Illuminate\Support\Facades\Route;
 
 require __DIR__.'/auth.php';
 
-Route::get('/', [MainController::class, 'home'])->name('main.home');
+Route::get('/', [MainController::class, 'accueil'])->name('main.accueil');
 
 Route::get('/menu', [MainController::class, 'menu'])->name('main.menu');
 
@@ -28,6 +28,10 @@ Route::get('/plat/{id}', [MainController::class, 'plat'])->name('main.plat');
 
 Route::get('/reservation', [MainController::class, 'reservation'])->name('main.reservation');
 Route::post('/reservation', [MainController::class, 'reservationStore'])->name('main.reservation.store');
+
+Route::get('/about', [MainController::class, 'about'])->name('main.about');
+
+Route::get('/contact', [MainController::class, 'contact'])->name('main.contact');
 
 Route::get('/admin/reservation', [AdminReservationController::class, 'index'])
 ->middleware('auth')->name('admin.reservation.index');

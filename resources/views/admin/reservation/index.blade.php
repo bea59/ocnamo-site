@@ -3,7 +3,7 @@
 @section('title', 'Admin - Réservation - Index')
 
 @section('content')
-<section class="en-dessous" style="margin-top: 200px;">
+<section class="en-dessous">
 
     <h2>Admin - Réservation - Index</h2>
     <div>

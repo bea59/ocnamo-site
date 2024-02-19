@@ -15,6 +15,7 @@
 					</div>
 				</div>
 			</div>
+		</div>	
 		</div>
 	</header>
 
@@ -45,7 +46,7 @@
                         @csrf
 						<div class="row form-group">
 							<div class="col-md-12">
-								<label for="Nom">NOM</label>
+								<label for="nom">NOM</label>
                                 <input class="form-control" type="text" name="nom" id="nom" min="3" max="50" value="{{ old('nom') }}"required>
                                 @error('nom')
                                 <div class="invalid-feedback">{{ $message }}</div>
@@ -54,7 +55,7 @@
 						</div>
                         <div class="row form-group">
 							<div class="col-md-12">
-								<label for="couvert">couvert</label>
+								<label for="couvert">couverts</label>
                                 <input class="form-control" type="text" name="couvert" id="couvert" min="3" max="50" value="{{ old('couvert') }}"required>
                                 @error('couvert')
                                 <div class="invalid-feedback">{{ $message }}</div>
@@ -82,11 +83,11 @@
 						<div class="row form-group">
 							<div class="col-md-12">
 								<label for="many">Heure</label>
-								<select name="heure" id="heure" class="form-control custom_select">
+								<select name="heure" id="heure" class="form-control">
 									{{-- horaire matin --}}
 									<option value=""></option>
 									@foreach ($heures as $heure)
-									<option value="{{ $heure }}" {{ old('heure') == $heure ? 'selected' : '' }}
+									<option class="select" value="{{ $heure }}" {{ old('heure') == $heure ? 'selected' : '' }}
 									>{{ $heure }}</option>
 									@endforeach
 								</select>

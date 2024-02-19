@@ -3,7 +3,7 @@
 @section('title', 'Admin - Réservation - Show')
 
 @section('content')
-<section>
+<section class="en-dessous">
     <h2>Admin - Réservation - Show</h2>
         <form action="{{route ('admin.reservation.update',['id' => $reservation->id]) }}" method="post">
             @csrf

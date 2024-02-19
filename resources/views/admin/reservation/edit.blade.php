@@ -3,7 +3,7 @@
 @section('title', 'Admin - Réservation - Edit')
 
 @section('content')
-<section>
+<section class="en-dessous">
     <h2>Admin - Réservation - Edit</h2>
     {{-- <div class="invalid-feedback">
         @foreach ($errors->all() as $error)
