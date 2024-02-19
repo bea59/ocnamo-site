@@ -1,6 +1,6 @@
 # Projet de restauration 0 Cnamo 
 
-Ce projet est un site web test pour la formation DevWeb du CNAM.
+Ce projet est un site web pour la formation DevWeb du CNAM.
 
 ## Prérequis 
 
@@ -16,7 +16,7 @@ Ce projet est un site web test pour la formation DevWeb du CNAM.
 il faut d'abord cloner l'application en local :
 
 ``` 
-git clone https://github.com/bea59/laravel-10.git
+git clone https://github.com/bea59/ocnamo-site.git
 ```
 
 Ensuite il faut créer une BDD puis configurer les accés dan le fichier `.env`
@@ -39,7 +39,7 @@ Pour créer les tables et injecter des données de test, vous pouvez utiliser un
 Vous pouvez donner un nom à l'application dans le fichier `.env`:
 
 ```
-APP_NAME = "Mon Application"
+APP_NAME = "mon_application"
 ```
 
 ### version prod 
@@ -92,4 +92,4 @@ TODO
 
 ### Droits d'auteur 
 
-Toutes les photos du site ont été réalisées par ... 
+Toutes les photos du site ont été réalisées par Unsplash. 
