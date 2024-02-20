@@ -4,15 +4,15 @@
 
 @section('content')
     <section>
-        <header id="fh5co-header" class="fh5co-cover js-fullheight" role="banner" style="background-image: url(images/hero_1.jpeg);" data-stellar-background-ratio="0.5">
+        <header id="fh5co-header" class="fh5co-cover js-fullheight" role="banner" style="background-image: url(images/photo-amb.jpg);" data-stellar-background-ratio="0.5">
             <div class="overlay"></div>
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 text-center">
                         <div class="display-t js-fullheight">
                             <div class="display-tc js-fullheight animate-box" data-animate-effect="fadeIn">
-                                <h1>Regarde <em>Ton</em> Menu</h1>
-                                <h2>Régale Toi</h2>
+                                <h1>Regardez <em>Votre</em> Menu</h1>
+                                <h2>Régalez-Vous</h2>
                             </div>
                         </div>
                     </div>
@@ -38,7 +38,7 @@
                             <div class="fh5co-item animate-box">
                                 @foreach($categorie->plat() as $plat)
                                     <a href="{{ route('main.plat', ['id' => $plat->id])}}">
-                                    <img src="{{ asset('images/'.$plat->fichier)}}" class="img-responsive" alt="{{ $plat->nom}}"></a>
+                                    <img src="{{ asset('images/menu/'.$plat->fichier)}}" class="img-responsive" alt="{{ $plat->nom}}"></a>
                                     <a href="{{ route('main.plat', ['id' => $plat->id])}}"><h4>{{ $plat->nom }}</h4></a>
                                     <span class="fh5co-price">{{ $plat->prix }} euros</span>
                                     <ul>
@@ -46,13 +46,13 @@
                                         <li>{{$etiquette -> nom}}</li>
                                         @endforeach
                                     </ul>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos nihil cupiditate ut vero alias quaerat inventore molestias vel suscipit explicabo.</p>
+                                    {{-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos nihil cupiditate ut vero alias quaerat inventore molestias vel suscipit explicabo.</p> --}}
                                 @endforeach
                             </div>
                         </div>
                     @endforeach
 
-        <div id="fh5co-started" class="fh5co-section animate-box" style="background-image: url(images/hero_1.jpeg);" data-stellar-background-ratio="0.5">
+        <div id="fh5co-started" class="fh5co-section animate-box" style="background-image: url(images/photo-amb.jpg);" data-stellar-background-ratio="0.5">
             <div class="overlay"></div>
             <div class="container">
                 <div class="row animate-box">

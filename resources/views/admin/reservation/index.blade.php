@@ -28,8 +28,8 @@
                 <td>{{ $reservation->id }}</td>
                 <td>{{ $reservation->nom }}</td>
                 <td>{{ $reservation->couverts }}</td>
-                <td>{{ $reservation->heure }}</td>
-                <td>{{ $reservation->jour }}</td>
+                <td>{{ $reservation->heures }}</td>
+                <td>{{ $reservation->jours }}</td>
                 <td>{{ $reservation->telephone }}</td>
                 <td>{{ $reservation->commentaires }}</td>
                 <td>{{ $reservation->created_at }}</td>
@@ -43,7 +43,7 @@
                     onsubmit="return confirm('Supprimer cet élément ?')">                       
                         @csrf
                         @method('DELETE')
-                        <button type="submit">Supprimer</button>
+                        <button class="color-b" type="submit">Supprimer</button>
                     </form>
                 </td>
             </tr>

@@ -33,19 +33,19 @@ Route::get('/about', [MainController::class, 'about'])->name('main.about');
 
 Route::get('/contact', [MainController::class, 'contact'])->name('main.contact');
 
-Route::get('/admin/reservation', [AdminReservationController::class, 'index'])
+Route::get('/admin/reservation/index', [AdminReservationController::class, 'index'])
 ->middleware('auth')->name('admin.reservation.index');
 
 Route::get('/admin/reservation/create', [AdminReservationController::class, 'create'])
 ->middleware('auth')->middleware('auth')->name('admin.reservation.create');
 
-Route::get('/admin/reservation/{id}', [AdminReservationController::class, 'show'])
+Route::get('/admin/reservation/show/{id}', [AdminReservationController::class, 'show'])
 ->middleware('auth')->name('admin.reservation.show');
 
 Route::get('/admin/reservation/{id}/edit', [AdminReservationController::class, 'edit'])
 ->middleware('auth')->name('admin.reservation.edit');
 
-Route::delete('/admin/reservation/{id}', [AdminReservationController::class, 'delete'])
+Route::delete('/admin/reservation/delete/{id}', [AdminReservationController::class, 'delete'])
 ->middleware('auth')->name('admin.reservation.delete');
 
 Route::put('/admin/reservation/{id}', [AdminReservationController::class, 'update'])

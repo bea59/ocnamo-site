@@ -4,7 +4,7 @@
 
 @section('content')
 <section> 
-    <header id="fh5co-header" class="fh5co-cover js-fullheight" role="banner" style="background-image: url(images/hero_1.jpeg);" data-stellar-background-ratio="0.5">
+    <header id="fh5co-header" class="fh5co-cover js-fullheight" role="banner" style="background-image: url(images/photo-amb.jpg);" data-stellar-background-ratio="0.5">
         <div class="overlay"></div>
         <div class="container">
             <div class="row">
@@ -25,14 +25,13 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6 col-md-pull-4 img-wrap animate-box" data-animate-effect="fadeInLeft">
-                <img src="{{asset('images/hero_1.jpeg')}}" alt="Free Restaurant Bootstrap Website Template by FreeHTML5.co">
+                <img style="margin-left: 400px" src="{{asset('images/amb.jpg')}}" alt="">
             </div>
             <div class="col-md-5 col-md-push-1 animate-box">
                 <div class="section-heading">
-                    <h2>The Restaurant</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae neque quisquam at deserunt ab praesentium architecto tempore saepe animi voluptatem molestias, eveniet aut laudantium alias, laboriosam excepturi, et numquam? Atque tempore iure tenetur perspiciatis, aliquam, asperiores aut odio accusamus, unde libero dignissimos quod aliquid neque et illo vero nesciunt. Sunt!</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam iure reprehenderit nihil nobis laboriosam beatae assumenda tempore, magni ducimus abentey.</p>
-                    <p><a href="#" class="btn btn-primary btn-outline">Our History</a></p>
+                    <h2>O'Cnamo</h2>
+                    <p>Il était une fois, dans le cœur d'une petite ville, un chef passionné du nom de Issam Bayankou. Issam avait toujours rêvé de créer un lieu où la richesse de la cuisine camerounaise pourrait être célébrée avec une touche moderne et créative. C'est ainsi que l'idée de son restaurant, O'Cnamo, a commencé à germer...</p>
+                    <p><a href="{{ route('main.about') }}" class="btn btn-primary btn-outline">Notre Histoire</a></p>
                 </div>
             </div>
         </div>
@@ -42,11 +41,11 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6 col-md-pull-4 img-wrap animate-box" data-animate-effect="fadeInLeft">
-                <img src="{{asset('images/hero_1.jpeg')}}" alt="Free Restaurant Bootstrap Website Template by FreeHTML5.co">
+                <img style="margin-left: 400px" src="{{asset('images/récolte.jpg')}}" alt="">
             </div>
             <div class="col-md-5 col-md-push-1 animate-box">
                 <div class="section-heading">
-                    <h2>The Restaurant</h2>
+                    <h2>La Récolte</h2>
                     @foreach ($actus as $actu)
                     <p>{{ $actu->contenu}}</p>
                     <p>({{ $actu->date_publication}})</p>
@@ -60,16 +59,33 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6 col-md-pull-4 img-wrap animate-box" data-animate-effect="fadeInLeft">
-                <img src="{{asset('images/gallery_9.jpeg')}}" alt="Free Restaurant Bootstrap Website Template by FreeHTML5.co">
+                <img style="margin-left: 400px" src="{{asset('images/concert.jpg')}}" alt="">
             </div>
             <div class="col-md-5 col-md-push-1 animate-box">
                 <div class="section-heading">
-                    <h2>The Restaurant</h2>
+                    <h2>O'CnamZik</h2>
                     @foreach ($actus as $actu)
                     <p>{{ $actu->contenu}}</p>
                     <p>({{ $actu->date_publication}})</p>
                     @endforeach
-                    {{-- <p><a href="#" class="btn btn-primary btn-outline">Our History</a></p> --}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="fh5co-about" class="fh5co-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-pull-4 img-wrap animate-box" data-animate-effect="fadeInLeft">
+                <img style="margin-left: 400px" src="{{asset('images/lyon.jpg')}}" alt="">
+            </div>
+            <div class="col-md-5 col-md-push-1 animate-box">
+                <div class="section-heading">
+                    <h2>Lyon, On arrive</h2>
+                    @foreach ($actus as $actu)
+                    <p>{{ $actu->contenu}}</p>
+                    <p>({{ $actu->date_publication}})</p>
+                    @endforeach
                 </div>
             </div>
         </div>

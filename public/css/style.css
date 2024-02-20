@@ -24,6 +24,10 @@ body {
   background: #000 url(../images/broken_noise.png) repeat;
 }
 
+.color-b {
+  color: #000;
+}
+
 #page {
   position: relative;
   overflow-x: hidden;
@@ -33,6 +37,11 @@ body {
   -o-transition: 0.5s;
   transition: 0.5s;
 }
+
+.espace {
+  margin-left: 10px;
+}
+
 .offcanvas #page {
   overflow: hidden;
   position: absolute;
@@ -69,8 +78,33 @@ p {
   color: white;
 }
 
+.restaurant-info {
+  max-width: 600px;
+  margin: 50px auto;
+  background-color:transparent;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.resa {
+  padding-left: 0%;
+  padding-top: 5%;
+}
+
+#map {
+  height: 400px;
+  width: 50%;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+/* .marge {
+  
+} */
+
 h1, h2, h3, h4, h5, h6, figure {
-  color: #000;
+  color:white;
   font-family: "Cormorant Garamond", Georgia, serif;
   font-weight: 400;
   margin: 0 0 20px 0;
@@ -416,7 +450,7 @@ h1, h2, h3, h4, h5, h6, figure {
 #fh5co-featured-menu .fh5co-item, #fh5co-gallery .fh5co-item, #fh5co-reservation-form .fh5co-item {
   float: left;
   width: 100%;
-  background:#ec3e44
+  background:#000;
 }
 #fh5co-featured-menu .fh5co-item.margin_top, #fh5co-gallery .fh5co-item.margin_top, #fh5co-reservation-form .fh5co-item.margin_top {
   margin-top: 150px;
@@ -427,7 +461,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 #fh5co-featured-menu .fh5co-item .fh5co-price, #fh5co-gallery .fh5co-item .fh5co-price, #fh5co-reservation-form .fh5co-item .fh5co-price {
   font-style: 20px;
-  color:darkorange;
+  color:gold;
   margin-bottom: 20px;
   font-size: 30px;
   display:block;
@@ -1767,11 +1801,11 @@ textarea {
     line-height: 50px;
   }
 }
-  @media screen and (max-width: 768px) {
+  /* @media screen and (max-width: 768px) {
     .fh5co-nav .menu-1 {
       display: none;
     }
-  }
+  } */
 @media screen and (max-width: 768px) {
   #fh5co-header .display-tc .btn,
   .fh5co-cover .display-tc .btn {

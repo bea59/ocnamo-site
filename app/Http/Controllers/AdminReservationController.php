@@ -60,8 +60,8 @@ class AdminReservationController extends Controller
         $validated = $request->validate([
             'nom' => 'required|min:3|max:50',
             'couverts' => 'required|numeric|gte:1|lte:16 ',
-            'heures' => "required|in:{$heures}",
-            'jours' => 'required|date|date_format:Y-m-d|after_or_equal:today',
+            'heure' => "required|in:{$heures}",
+            'jour' => 'required|date|date_format:Y-m-d|after_or_equal:today',
             'telephone' => 'required|min:10|max:10',
             'commentaires' => 'nullable|min:10|max:1000',
         ]);
@@ -69,8 +69,8 @@ class AdminReservationController extends Controller
         $reservation = Reservation::find($id);
         $reservation->nom = $validated['nom'];
         $reservation->couverts = $validated['couverts'];
-        $reservation->heures = $validated['heures'];
-        $reservation->jours = $validated['jours'];
+        $reservation->heures = $validated['heure'];
+        $reservation->jours = $validated['jour'];
         $reservation->telephone = $validated['telephone'];
         $reservation->commentaires = $validated['commentaires'];
 
@@ -86,7 +86,7 @@ class AdminReservationController extends Controller
         $reservation = Reservation::find($id);
         $reservation->delete();
 
-        return redirect()->route('admin.reservation.indzex');
+        return redirect()->route('admin.reservation.index');
     }
 
     public function create ()

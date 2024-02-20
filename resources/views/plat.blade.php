@@ -1,8 +1,8 @@
 @extends('base')
 
 @section('content')
-<section>
-    <img src="{{ asset('images/'.$plat->fichier)}}" alt="{{ $plat->titre}}">
+<section class="en-dessous">
+    <img src="{{ asset('images/menu/'.$plat->fichier)}}" alt="{{ $plat->titre}}">
     <h2>{{ $plat->nom }}</h2>
     <span class="prix">{{ $plat->prix }} euros</span>
         <ul>
